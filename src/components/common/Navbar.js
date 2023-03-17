@@ -41,11 +41,9 @@ const Navbar = () => {
               Login
             </Link>
           </li> */}
-          <button className={styles.btn}>
-            <Link to={"/user_cms"} className={styles.linkclasssignup}>
-              SignUp
-            </Link>
-          </button>
+          <Link to={"/user_cms"} className={styles.linkclasssignup}>
+            <button className={styles.btn}>SignUp</button>
+          </Link>
         </ul>
       </div>
 
