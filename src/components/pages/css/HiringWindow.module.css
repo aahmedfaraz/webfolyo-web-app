@@ -1,0 +1,146 @@
+.window_container{
+    
+    height:100vh;
+    width:100vw;
+
+}
+.heading_container{    
+    height:50%;
+    width:100%;
+    display:flex;
+    padding-top:40px;
+}
+.heading{
+ 
+    margin-left:100px;
+    height:100%;
+    width:50vw;
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.main_headings{
+    font-size:3.5rem;
+  
+    text-shadow: 0px 0px 1px rgba(7, 7, 7, 0.377);
+}
+p{
+
+color: #5181c9;
+text-shadow:0px 0px 0.8px  #44618d;
+line-height: 50px;
+font-size: 1.1em;
+
+}
+.image{
+    
+    margin-right:70px;
+    height:100%;
+    width:50vw; 
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+  
+}
+.image img{
+    margin-top:55px;
+    height:100%;
+    width:70%;
+    padding:10px;
+}
+
+.search_container{
+    transform: translateY(-20px);
+    height:50%;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    gap:20px;
+       
+}
+.row{
+    display:flex;
+    width:85vw;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+.column{
+    display:flex;
+    flex-direction:column;
+    flex: 1;
+    gap:5px;
+    
+} 
+.column label{
+font-size: 14px;
+padding-left:5px;
+font-weight:bold;
+}
+
+.icon_container{
+    position:relative;
+    margin-left:8px;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap:5px;
+    border-radius:5px;
+    /* border-color: 1px solid #5C5C5C; */
+    box-shadow: 0px 0px 4px rgb(20, 20, 20);
+    border:none;
+}
+.icon_container img{
+    position:absolute;
+    height:40%;
+    padding-left:10px;
+    opacity: 0.8;
+    z-index: 1;
+}
+.icon_container select{
+    width:100%;
+    border-radius:5px;
+    height:45px;
+    padding:5px;
+    padding-left:35px;
+    font-size: 13px;
+}
+
+select:focus{
+    outline: none;
+   
+}
+.btn{
+
+    color:white;
+    border-radius:5px;
+    background-color:red;
+    display:flex;
+    width:35%;
+    height:100%;
+    padding:12px;
+    justify-content: center;
+    align-self: flex-start;
+    font-size: 15px;
+    cursor:pointer;
+    border: 1px solid red;
+}
+.btn:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 1px 1px rgb(218, 35, 35);
+
+}
+#submit{
+
+    margin-top: 22px;
+    margin-left:10px;
+}
+
+/* Responsive Design
+ */

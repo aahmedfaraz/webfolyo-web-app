@@ -1,0 +1,62 @@
+*{
+  font-family: 'BellMT';
+}
+.aboutsection {
+    background-color:#f5f7fa;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .aboutcontent {
+    
+    width: 40%;
+    text-align: left;
+    color: black;
+    
+   
+  }
+  
+  .aboutcontent h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    
+  }
+  
+  .aboutcontent p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ctabutton {
+    background-color:#EB4A58;
+    border-color: #EB4A58;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .aboutimage{
+    display: flex;
+      height: 60%;
+      width: 50%;
+      align-items: end;
+      justify-content: end;
+      
+      
+  }
+  .aboutimage img{
+    display: flex;
+    justify-content: center;
+      align-items: center;
+      height: 60vh;
+      width: 50vw;
+      
+  }
+  
+  

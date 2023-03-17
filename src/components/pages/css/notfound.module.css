@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.errorsection{
+    background-color:#f5f7fa;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.error{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    
+}
+.error img{
+    height: 400px;
+    width: 400px;
+}
+.homebtn{
+    color: white;
+  background: #eb4a58;
+  border-color: #eb4a58;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+}

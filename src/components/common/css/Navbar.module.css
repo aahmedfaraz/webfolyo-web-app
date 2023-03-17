@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Philosopher&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaeff4;
+  padding: 0px 80px;
+}
+
+.navlinks li {
+  list-style: none;
+  padding: 20px;
+  position: relative;
+}
+.navlinks ul li:hover {
+  color: #3c64b1;
+}
+
+.navlinks ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkclass {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.linkclass:hover {
+  color: #3c64b1;
+  transition: 0.3s ease-in-out;
+}
+.linkclass:hover::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #3c64b1;
+  position: absolute;
+  bottom: 17px;
+  left: 20px;
+}
+.linkclass:focus {
+  color: #3c64b1;
+}
+.linkclasssignup {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  padding-left: 11px;
+  color: black;
+  font-size: 25px;
+}
+span {
+  color: #3c64b1;
+}
+.btn {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #eb4a58;
+  border-color: #eb4a58;
+  border-radius: 5px;
+  width: 106px;
+  height: 40px;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .navlinks {
+    border: 1px solid black;
+    right: 0px;
+    height: 5vh;
+    top: 5vh;
+    background-color: #eaeff4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .navlinks li {
+    opacity: 0;
+  }
+
+  .hamburger {
+    display: block;
+    size: 40px;
+    color: #3c64b1;
+  }
+}
+
+.shownav {
+  transform: translateX(0%);
+}
+
+.shownav li {
+  opacity: 1;
+  transition: opacity 0.5;
+}
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+.navigation{
+    background: #8b6c4e;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    
+}
+.navigation li{
+    margin: 0;
+  display: inline-block; 
+}
+.navigation li Link{
+    color: #808080;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  
+}
+.navigation li Link:active{
+    color: #000000;
+}
+
+.logocontainer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .navigation {
+    border: 1px solid black;
+    height: 60px;
+    background-color: #fef7e5;
+    position: relative;
+  }
+  
+  /* .logo {
+  }
+  
+  .navelements {
+  } 
+  
+  .navelements ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  
+  .navelements ul li:not(:last-child) {
+    margin-right: 60px;
+  }
+  
+  .navelements ul a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2f234f;
+    text-decoration: none;
+  }
+  
+  .navelements ul a.active {
+    color: #574c4c;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .navelements ul a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #574c4c;
+  }  
+
+   const isMobileDevice = useMediaQuery({
+    query: "(min-device-width: 480px)",
+  });
+
+  const isTabletDevice = useMediaQuery({
+    query: "(min-device-width: 768px)",
+  });
+
+  const isLaptop = useMediaQuery({
+    query: "(min-device-width: 1024px)",
+  });
+
+  const isDesktop = useMediaQuery({
+    query: "(min-device-width: 1200px)",
+  });
+
+  const isBigScreen = useMediaQuery({
+    query: "(min-device-width: 1201px )",
+  }); */
+nav:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}

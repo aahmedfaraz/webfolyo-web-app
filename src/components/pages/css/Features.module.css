@@ -1,0 +1,39 @@
+.featuressection {
+  
+  background-color: #f5f7fa;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.featurescontent {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+}
+/*.createportfolio {
+  border: 2px solid blue;
+}
+.hiring {
+  border: 2px solid blue;
+}
+.featuresimage {
+  border: 1px solid black;
+
+}*/
+.content {
+ /* border: 1px solid black;*/
+  width: 500px;
+}
+.content h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
