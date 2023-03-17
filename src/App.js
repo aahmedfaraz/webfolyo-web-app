@@ -11,7 +11,12 @@ import Footer from "./components/common/Footer";
 import HiringWindow from "./components/pages/HiringWindow";
 import AddProjects from "./components/pages/AddProjects";
 import AboutUs from "./components/pages/AboutUs";
+import UserCms from "./components/pages/UserCms";
 import { useMediaQuery } from "react-responsive";
+
+import { Amplify, Auth } from "aws-amplify";
+import awsconfig from "./aws-exports";
+Amplify.configure(awsconfig);
 
 const App = () => {
   return (
@@ -25,6 +30,7 @@ const App = () => {
         <Route path='/about_us' element={<AboutUs />} />
         <Route path='/add_project' element={<AddProjects />} />
         <Route path='/hiring_window' element={<HiringWindow />} />
+        <Route path='/user_cms' element={<UserCms />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

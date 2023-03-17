@@ -42,7 +42,7 @@ const Navbar = () => {
             </Link>
           </li> */}
           <button className={styles.btn}>
-            <Link to={"/signup"} className={styles.linkclasssignup}>
+            <Link to={"/user_cms"} className={styles.linkclasssignup}>
               SignUp
             </Link>
           </button>
